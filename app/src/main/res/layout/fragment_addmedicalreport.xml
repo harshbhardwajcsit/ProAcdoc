@@ -1,0 +1,125 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/snackbarPosition"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.medical.proadoc.fragments.HomeFragment"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarlayout"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.50"
+            android:gravity="center_vertical">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.40"
+                android:gravity="center"
+                android:id="@+id/lvUpload">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/cameraupload" />
+
+                <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Upload Reports Or Priscriptions"
+                    android:id="@+id/textView17"
+                    android:textColor="@color/MatBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextSelectMember"
+                    android:drawablePadding="@dimen/tendp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:hint="Select Member"
+                    android:paddingLeft="@dimen/tendp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center_vertical">
+
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:drawablePadding="@dimen/tendp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:hint="Select Body Part"
+                    android:paddingLeft="@dimen/tendp"
+                    android:focusable="false"
+
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextBodyPart" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="0.50"
+            android:gravity="center">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:indeterminateTint="@color/lightyellow"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone"
+      />
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="@string/fragment_image_trans"
+
+                android:clickable="true"
+                android:id="@+id/floatingActionButton"
+                android:src="@drawable/plusnew"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

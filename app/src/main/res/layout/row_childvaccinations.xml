@@ -1,0 +1,178 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:elevation="10dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:stateListAnimator="@anim/lift_on_touch"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:background="#ffffff"
+    android:layout_margin="10dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.20" >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.50"
+               android:gravity="center_vertical" >
+
+               <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:text="Name"
+                   android:id="@+id/textView13"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="@dimen/tendp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.50"
+               android:gravity="center_vertical" >
+
+               <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:text="Prateek Sharma"
+                   android:id="@+id/textViewName"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="@dimen/tendp" />
+           </LinearLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.20" >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.50"
+               android:gravity="center_vertical" >
+
+               <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:text="Next Vaccination Date"
+                   android:id="@+id/textView7"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="@dimen/tendp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.50"
+               android:gravity="center_vertical" >
+
+               <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:text="27-Oct-2014"
+                   android:id="@+id/textViewDate"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="@dimen/tendp" />
+           </LinearLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.20" >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.50"
+               android:gravity="center_vertical" >
+
+               <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:text="Relation"
+                   android:id="@+id/textView9"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="@dimen/tendp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.50"
+               android:gravity="center_vertical" >
+
+               <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"
+                   android:text="Dr. K. Mathur"
+                   android:id="@+id/textViewRelation"
+                   android:textColor="@android:color/black"
+                   android:layout_marginLeft="@dimen/tendp" />
+           </LinearLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.20" >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.30"
+               android:gravity="center_vertical">
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.70"
+               android:gravity="center_vertical|right">
+
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="View Details"
+                   android:textColor="@color/colorAccent"
+                   style="?android:attr/borderlessButtonStyle"
+                   android:id="@+id/button" />
+
+           </LinearLayout>
+       </LinearLayout>
+
+   </LinearLayout>
+</android.support.v7.widget.CardView>

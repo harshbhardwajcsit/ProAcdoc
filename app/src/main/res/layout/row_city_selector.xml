@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:elevation="10dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:stateListAnimator="@anim/lift_on_touch"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:background="#ffffff"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/llCountryRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:weightSum="1">
+
+        <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+            android:id="@+id/tvCountryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.85"
+            android:singleLine="true"
+            android:text="CountryName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

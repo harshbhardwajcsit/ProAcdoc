@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medical.proadoc.fragments.SliderOne"
+    android:orientation="vertical"
+    android:background="#F2A700">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.70">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView12"
+            android:transitionName="@string/fragment_image_trans"
+            android:src="@drawable/slidertwo"
+            android:layout_marginTop="@dimen/tendp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.30"
+            android:gravity="center">
+
+
+
+            <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending Charts"
+
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.70"
+            android:layout_margin="@dimen/tendp"> <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="You Can Use The Trending Charts To Track Your Health Records.Our Team Will Extract Details From Your Reports You Upload"
+            android:id="@+id/textView18"
+            android:textColor="#ffffff" /></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

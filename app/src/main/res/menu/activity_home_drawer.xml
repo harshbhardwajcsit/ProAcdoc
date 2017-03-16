@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeNavigation"
+
+            android:title="Home" />
+        <item
+            android:id="@+id/walletNavigation"
+
+            android:title="Medical Wallet" />
+        <item
+            android:id="@+id/nav_MyFamily"
+
+            android:title="My Family" />
+        <item
+            android:id="@+id/nav_ChildVaccinations"
+
+            android:title="Child Vaccinations" />
+               <item
+            android:id="@+id/notficationNavigation"
+
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_Chats"
+
+            android:title="Chats" />
+
+        <item
+            android:id="@+id/nav_send"
+
+            android:title="Logout" />
+    </group>
+
+
+
+
+</menu>

@@ -1,0 +1,233 @@
+h<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/snackbarPosition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbarlayout"
+            />
+        <LinearLayout
+            android:id="@+id/frame"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.60">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.70"
+                        android:gravity="center_vertical" >
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:drawablePadding="@dimen/tendp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:paddingLeft="@dimen/tendp"
+                            android:hint="Enter Name"
+                            android:id="@+id/editTextName"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.70"
+                        android:gravity="center_vertical">
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:ems="10"
+                            android:drawablePadding="@dimen/tendp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:paddingLeft="@dimen/tendp"
+                            android:hint="Enter Email (Username)"
+                            android:id="@+id/editTextEmail"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:drawablePadding="@dimen/tendp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:paddingLeft="@dimen/tendp"
+                        android:hint="Enter Password (Between 4 to 21 Char)"
+                        android:id="@+id/editTextPassword"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:drawablePadding="@dimen/tendp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/editTextMobile"
+                        android:hint="Mobile No"
+                        android:paddingLeft="@dimen/tendp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/editTextDOB"
+                        android:drawablePadding="@dimen/tendp"
+                        android:hint="DOB"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:focusable="false"
+                        android:paddingLeft="@dimen/tendp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:focusable="false"
+                        android:id="@+id/editTextRelation"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/tendp"
+                        android:hint="Add  Relation"
+                        android:paddingLeft="@dimen/tendp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" >
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:focusable="false"
+                        android:id="@+id/editTextCity"
+                        android:clickable="true"
+                        android:drawablePadding="@dimen/tendp"
+                        android:hint="Select City"
+                        android:paddingLeft="@dimen/tendp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="0.40">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:indeterminateTint="@color/lightyellow"
+                    android:indeterminateTintMode="src_atop"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:clickable="true"
+                    android:id="@+id/floatingActionButton"
+                    android:src="@drawable/plusnew"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/LayoutView"
+    android:layout_height="match_parent"
+    tools:context="com.medical.proadoc.fragments.HomeFragment"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lvBodyPart"
+        android:layout_weight="0.20">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.60"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:src="@drawable/cameraupload" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.40"
+            android:gravity="center|center_vertical">
+
+            <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Upload Vaccination Report"
+                android:id="@+id/textView17"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/MatBlack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10" >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextSelectMember"
+                android:drawablePadding="@dimen/tendp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:hint="Select Child Name"
+                android:paddingLeft="@dimen/tendp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.50"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:indeterminateTint="@color/lightyellow"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/fragment_image_trans"
+
+            android:clickable="true"
+            android:id="@+id/floatingActionButton"
+            android:src="@drawable/plusnew"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

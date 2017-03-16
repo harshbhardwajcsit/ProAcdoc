@@ -1,0 +1,18 @@
+<resources>
+
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- enable overlap of transitions -->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+    <style name="AppTheme.FloatingAccentButtonOverlay">
+        <item name="colorAccent">@color/lightyellow</item>
+    </style>
+
+
+</resources>

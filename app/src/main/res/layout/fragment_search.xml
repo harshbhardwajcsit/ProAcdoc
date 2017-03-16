@@ -1,0 +1,50 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/LayoutView"
+    android:layout_height="match_parent"
+    tools:context="com.medical.proadoc.fragments.SearchFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:background="@color/colorPrimaryDark" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/tendp"
+                android:hint="Search Doctors, Hospitals, Pathlabs... "
+
+                android:id="@+id/editText"
+                android:background="@android:color/white"
+                android:layout_margin="@dimen/tendp"
+                android:textColorHint="@color/light_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.90" >
+
+
+
+            <view
+                android:id="@+id/recycler_view"
+                android:clipToPadding="false"
+                class="android.support.v7.widget.RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

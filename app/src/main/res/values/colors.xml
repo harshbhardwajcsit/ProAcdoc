@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2A700</color>
+    <color name="colorPrimaryDark">#DF9103</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#DC4436</color>
+    <color
+         name="lightyellow">#FAA429</color>
+    <color name="Black">#000000</color>
+
+    <color name="etBorderColor">#999999</color>
+    <color name="light_grey">#a49f9f</color>
+    <color name="lightblack">#4d4949</color>
+    <color name="etColorHint">#666666</color>
+    <color name="etColor">#000000</color>
+
+    <color name="GREEN">#8dc73f</color>
+    <color name="ORANGE">#f25a29</color>
+    <color name="BLUE">#00a4ed</color>
+    <color name="YELLOW">#fcb315</color>
+    <color name="SAFFRON">#c04000</color>
+    <color name="MatBlack">#403F40</color>
+    <color name="ReferalBg">#333F50</color>
+    <color name="ReferalStatus">#838A94</color>
+    <color name="refferbluetextcolor">#333F50</color>
+
+    <color name="referalblueedittext">#0563C1</color>
+    <color name="notificationheadercolor">#CD329A</color>
+    <color name="LeaderBoardRow1Color">#FFFFFF</color>
+    <color name="LeaderBoardRow2Color">#DFDEDF</color>
+    <color name="LIKEBLUE">#2196F3</color>
+
+</resources>

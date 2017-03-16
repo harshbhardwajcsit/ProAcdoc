@@ -1,0 +1,236 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/snackbarPosition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbarlayout"
+            />
+        <LinearLayout
+            android:id="@+id/frame"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.40"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView9"
+                        android:transitionName="@string/MainLogo"
+                        android:src="@drawable/loginlogo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.60"
+                    android:background="#ffffff">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.70"
+                        android:layout_margin="20dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20" >
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress"
+                                android:ems="10"
+android:drawablePadding="@dimen/tendp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:hint="Enter Email Address"
+                                android:id="@+id/editTextLoginUserName"
+                                android:layout_weight="1"
+                                android:text="prateek@gmail.com" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20" >
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:ems="10"
+                                android:drawablePadding="@dimen/tendp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:hint="Enter Password"
+                                android:id="@+id/editTextLoginPassword"
+                                android:layout_weight="1"
+                                android:text="123456" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:gravity="center">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Login Now"
+                                android:id="@+id/button3"
+                                android:background="@color/colorPrimaryDark"
+                                android:paddingLeft="20dp"
+                                android:onClick="loginNow"
+                                android:paddingRight="20dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#ffffff"
+                                android:minWidth="150dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:gravity="center">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.20"
+                            android:gravity="center_vertical|center_horizontal">
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:indeterminate="false"
+                                android:indeterminateTint="@color/lightyellow"
+                                android:indeterminateTintMode="src_atop"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:gravity="center">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.50"
+                            android:gravity="center"
+                            android:background="@color/colorPrimaryDark">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.50"
+                                android:gravity="center"
+                                android:onClick="forgot_click">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Forgot Password"
+                                    android:id="@+id/textView15"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent" android:background="@android:color/white"></View>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.50"
+                                android:gravity="center"
+                                android:onClick="register_click">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Register Now"
+                                    android:id="@+id/textView16"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

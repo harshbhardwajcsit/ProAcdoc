@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.30"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/leader2_iv_profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/profile_image"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.70"
+        android:gravity="center_vertical">
+
+        <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Prateek Sharma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:layout_gravity="left"
+            android:textStyle="bold" />
+
+        <com.medical.proadoc.CustomControls.CustomLatoRegularTextView
+            android:id="@+id/textView"
+            android:layout_gravity="center|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="appsvalley1@gmail.com" />
+    </LinearLayout>
+
+</LinearLayout>
